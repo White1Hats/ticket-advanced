@@ -224,7 +224,7 @@ module.exports = {
           const user1 = interaction.guild.members.cache.get(interaction.user.id);
           const roleIdToCheck = ticket.config_principais.cargo_staff;
         
-          const hasRequiredRole = roleIdToCheck.some(roleID => user1.roles.cache.has(roleID));
+          const hasRequiredRole = user1.roles.cache.has(roleIdToCheck);
         
           if (!hasRequiredRole) {
             await interaction.reply({ content: 'Você não tem permissão para usar este botão.', ephemeral: true });
@@ -535,7 +535,7 @@ module.exports = {
             const user1 = interaction.guild.members.cache.get(interaction.user.id);
             const roleIdToCheck = ticket.config_principais.cargo_staff;
           
-            const hasRequiredRole = roleIdToCheck.some(roleID => user1.roles.cache.has(roleID));
+            const hasRequiredRole = user1.roles.cache.has(roleIdToCheck);;
           
             if (!hasRequiredRole) {
               await interaction.reply({ content: 'Você não tem permissão para usar este botão.', ephemeral: true });
@@ -807,7 +807,7 @@ module.exports = {
             const user1 = interaction.guild.members.cache.get(interaction.user.id);
           const roleIdToCheck = ticket.config_principais.cargo_staff;
         
-          const hasRequiredRole = roleIdToCheck.some(roleID => user1.roles.cache.has(roleID));
+          const hasRequiredRole = user1.roles.cache.has(roleIdToCheck);;
         
           if (!hasRequiredRole) {
             await interaction.reply({ content: 'Você não tem permissão para usar este botão.', ephemeral: true });
