@@ -19,7 +19,7 @@ Este é um bot Discord configurável de tickets que permite aos administradores 
 1. Clone este repositório:
 
    ```bash
-   git clone https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git
+   git clone https://github.com/White1Hats/ticket-advanced.git
    ```
 
 2. Instale as dependências necessárias:
